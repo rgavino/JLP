@@ -15,7 +15,6 @@
 
     <path id="classpath">
         <fileset dir="${lib.dir}" includes="**/*.jar"/>
-        <fileset dir="${ronnie.dir}" includes="**/*.jar"/>
     </path>
 
     <path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
