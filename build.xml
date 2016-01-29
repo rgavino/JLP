@@ -9,7 +9,6 @@
     <property name="main-class"  value="oata.HelloWorld"/>
 
     <property name="lib.dir"     value="lib"/>
-    <property name="ronnie.dir"     value="/opt/junit"/>
 
     <property name="report.dir"  value="${build.dir}/junitreport"/>
 
