@@ -16,8 +16,8 @@ public class SchemaTest {
  
     public static void main(String[] args) {
 
-	  Validator v = new Validator(new File("myXML.xml").toString(), 
-	  							  new File("myXML-3.xsd").toURI().toURL().toString());
+	  Validator v = new Validator(new File("oata/myXML.xml").toString(), 
+	  							  new File("oata/myXML3.xsd").toURI().toURL().toString());
 
 	  //assertTrue(v.toString(), v.isValid());
 
