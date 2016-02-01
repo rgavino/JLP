@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-public void testWillAlwaysFail() {
+public void validateXMLagainstSchema() {
 	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
@@ -24,7 +24,7 @@ public void testWillAlwaysFail() {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
    			Validator v = new Validator(is);
 			v.useXMLSchema(true);
-			v.setJAXP12SchemaSource(new File("oata/myXML3.xsd"));
+			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
 	//		assertTrue(v.toString(), v.isValid());
 //			assertTrue("forced", true);
 			assertTrue(v.toString(), false);
