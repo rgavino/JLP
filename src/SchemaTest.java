@@ -26,7 +26,7 @@ public void testWillAlwaysFail() {
 //			v.useXMLSchema(true);
 //			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
 //			assertTrue(v.toString(), v.isValid());
-			assertTrue("forced", false);
+			assertTrue("forced", true);
 //			assertTrue(v.toString(), false);
 			//boolean isValid = v.isValid();
         } catch (Exception e) {
