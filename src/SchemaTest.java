@@ -22,7 +22,7 @@ public class SchemaTest extends junit.framework.TestCase {
         //fail("An error message - forcing a fail"); 
     }
 
-//public void validateXMLagainstSchema() {
+public void validateXMLagainstSchema() {
 	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
@@ -40,7 +40,7 @@ public class SchemaTest extends junit.framework.TestCase {
         //    e.printStackTrace();
         //}
                 //fail("An error message - forcing a fail"); 
-//    }
+    }
 
 
 }
