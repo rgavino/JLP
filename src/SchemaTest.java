@@ -31,7 +31,7 @@ public class SchemaTest {
         }
 
 
-//Validator v = new Validator(is);
+		Validator v = new Validator(is);
 //v.useXMLSchema(true);
 //v.setJAXP12SchemaSource(new File(myXML3.xsd));
 //boolean isValid = v.isValid();
