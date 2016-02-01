@@ -24,7 +24,11 @@ public class SchemaTest {
 
 	  //assertTrue(v.toString(), v.isValid());
  
-InputSource is = new InputSource(new FileInputStream("myXML.xml"));
+ System.out.println("Working Directory = " +
+              System.getProperty("user.dir"));
+
+//InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+
 //Validator v = new Validator(is);
 //v.useXMLSchema(true);
 //v.setJAXP12SchemaSource(new File(myXML3.xsd));
