@@ -19,7 +19,7 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element name="title" type="xs:string"/>
-            <xs:element name="note" type="xs:string" minOccurs="0"/>
+            <xs:element name="note" type="xs:string" minOccurs="10"/>
             <xs:element name="quantity" type="xs:positiveInteger"/>
             <xs:element name="price" type="xs:decimal"/>
           </xs:sequence>
