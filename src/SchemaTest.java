@@ -19,11 +19,11 @@ public class SchemaTest {
  
     public static void main(String[] args) {
 
-	  Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
+	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
 
-//InputSource is = new InputSource(new FileInputStream(oata/myXML.xml));
+InputSource is = new InputSource(new FileInputStream(oata/myXML.xml));
 //Validator v = new Validator(is);
 //v.useXMLSchema(true);
 //v.setJAXP12SchemaSource(new File(myXML3.xsd));
