@@ -15,7 +15,7 @@ public class SchemaTest {
  
     public static void main(String[] args) {
         URL url1 = SchemaTest.class.getResource("myXML.xml");
-        URL url2 = SchemaTest.class.getResource("myXML.xml");
+        URL url2 = SchemaTest.class.getResource("myXML-3.xsd");
         FileReader fr1 = null;
         FileReader fr2 = null;
         try {
