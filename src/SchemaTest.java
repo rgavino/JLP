@@ -15,7 +15,14 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-public void validateXMLagainstSchema() {
+    public void testNothing() {
+    }
+    
+    public void testWillAlwaysFail() {
+        //fail("An error message - forcing a fail"); 
+    }
+
+//public void validateXMLagainstSchema() {
 	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
@@ -33,7 +40,7 @@ public void validateXMLagainstSchema() {
         //    e.printStackTrace();
         //}
                 //fail("An error message - forcing a fail"); 
-    }
+//    }
 
 
 }
