@@ -22,10 +22,10 @@ public class SchemaTest extends junit.framework.TestCase {
         //fail("An error message - forcing a fail"); 
     }
 
-    public void validateXMLagainstSchema() {
+    public void testXMLagainstSchema() {
         //fail("An error message - forcing a fail"); 
     }
-    public void validateXMLagainstDTD() {
+    public void testXMLagainstDTD() {
         //fail("An error message - forcing a fail"); 
     }
 
