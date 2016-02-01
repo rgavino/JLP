@@ -14,9 +14,8 @@ import org.xml.sax.SAXException;
 public class SchemaTest {
  
     public static void main(String[] args) {
-    	String example = " \"http://example.com/order\">"
-      + "";
-	  Validator v = new Validator(example, 
+
+	  Validator v = new Validator(new File("myXML.xml").toString(), 
 	  							  new File("myXML-3.xsd").toURI().toURL().toString());
 
 	  assertTrue(v.toString(), v.isValid());
