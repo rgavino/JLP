@@ -24,14 +24,15 @@ public class SchemaTest {
         try {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
    			Validator v = new Validator(is);
+			v.useXMLSchema(true);
+			v.setJAXP12SchemaSource(new File("oata/myXML3.xsd"));
+			assertTrue(v.toString(), v.isValid());
+			//boolean isValid = v.isValid();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-//v.useXMLSchema(true);
-//v.setJAXP12SchemaSource(new File(myXML3.xsd));
-//boolean isValid = v.isValid();
 
     }
  
