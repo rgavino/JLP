@@ -15,8 +15,7 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-    public static void main(String[] args) {
-
+public void testWillAlwaysFail() {
 	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
@@ -27,13 +26,14 @@ public class SchemaTest extends junit.framework.TestCase {
 //			v.useXMLSchema(true);
 //			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
 //			assertTrue(v.toString(), v.isValid());
-			assertTrue("forced", true);
+			assertTrue("forced", false);
 //			assertTrue(v.toString(), false);
 			//boolean isValid = v.isValid();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+                //fail("An error message - forcing a fail"); 
     }
- 
+
+
 }
