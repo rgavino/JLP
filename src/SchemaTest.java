@@ -25,9 +25,9 @@ public void validateXMLagainstSchema() {
    			Validator v = new Validator(is);
 			v.useXMLSchema(true);
 			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
-	//		assertTrue(v.toString(), v.isValid());
+			assertTrue(v.toString(), v.isValid());
 //			assertTrue("forced", true);
-			assertTrue(v.toString(), false);
+//			assertTrue(v.toString(), false);
 			//boolean isValid = v.isValid();
         } catch (Exception e) {
             e.printStackTrace();
