@@ -11,11 +11,11 @@ import org.custommonkey.xmlunit.Diff;
 import org.custommonkey.xmlunit.Difference;
 import org.xml.sax.SAXException;
  
-public class ComparisonTest {
+public class SchemaTest {
  
     public static void main(String[] args) {
-        URL url1 = ComparisonTest.class.getResource("reference.xml");
-        URL url2 = ComparisonTest.class.getResource("comparison.xml");
+        URL url1 = SchemaTest.class.getResource("reference.xml");
+        URL url2 = SchemaTest.class.getResource("comparison.xml");
         FileReader fr1 = null;
         FileReader fr2 = null;
         try {
