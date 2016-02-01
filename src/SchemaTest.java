@@ -15,12 +15,12 @@ public class SchemaTest {
  
     public static void main(String[] args) {
 
-	  //Validator v = new Validator(new File("myXML.xml").toString(), 
-	  //							  new File("myXML-3.xsd").toURI().toURL().toString());
+	  Validator v = new Validator(new File("myXML.xml").toString(), 
+	  							  new File("myXML-3.xsd").toURI().toURL().toString());
 
 	  //assertTrue(v.toString(), v.isValid());
 
-InputSource is = new InputSource(new FileInputStream(oata/myXML.xml));
+//InputSource is = new InputSource(new FileInputStream(oata/myXML.xml));
 //Validator v = new Validator(is);
 //v.useXMLSchema(true);
 //v.setJAXP12SchemaSource(new File(myXML3.xsd));
