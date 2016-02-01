@@ -20,10 +20,10 @@ public class SchemaTest {
 
 	  //assertTrue(v.toString(), v.isValid());
 
-InputSource is = new InputSource(new FileInputStream(myXML.xml));
+InputSource is = new InputSource(new FileInputStream("myXML.xml"));
 Validator v = new Validator(is);
 v.useXMLSchema(true);
-v.setJAXP12SchemaSource(new File('myXML-3.xsd'));
+v.setJAXP12SchemaSource(new File("myXML-3.xsd"));
 boolean isValid = v.isValid();
 
     }
