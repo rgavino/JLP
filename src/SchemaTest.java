@@ -42,7 +42,7 @@ public class SchemaTest extends junit.framework.TestCase {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+ 
         try {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
    			Validator v = new Validator(is);
