@@ -22,9 +22,9 @@ public void validateXMLagainstSchema() {
  
         try {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
-   			Validator v = new Validator(is);
-			v.useXMLSchema(true);
-			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
+//   			Validator v = new Validator(is);
+//			v.useXMLSchema(true);
+//			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
 //			assertTrue(v.toString(), v.isValid());
 //			assertTrue("should pass", true);
 //			assertTrue("should fail", false);
