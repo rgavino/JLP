@@ -14,10 +14,7 @@ import org.xml.sax.SAXException;
 public class SchemaTest {
  
     public static void main(String[] args) {
-    	String example = "
-      + " \"http://example.com/order\">"
-      + ""
-      + ""
+    	String example = " \"http://example.com/order\">"
       + "";
 	  Validator v = new Validator(example, 
 	  							  new File("myXML-3.xsd").toURI().toURL().toString());
