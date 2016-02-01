@@ -21,8 +21,8 @@ public class SchemaTest extends junit.framework.TestCase {
 
 	  //assertTrue(v.toString(), v.isValid());
  
-        try {
-			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+//        try {
+//			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
 //   			Validator v = new Validator(is);
 //			v.useXMLSchema(true);
 //			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
@@ -30,9 +30,9 @@ public class SchemaTest extends junit.framework.TestCase {
 //			assertTrue(v.toString(), true);
 //			assertTrue(v.toString(), false);
 			//boolean isValid = v.isValid();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+  //      } catch (Exception e) {
+    //        e.printStackTrace();
+      //  }
 
     }
  
