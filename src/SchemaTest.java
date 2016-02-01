@@ -13,7 +13,7 @@ import org.custommonkey.xmlunit.*;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
  
-public class SchemaTest {
+public class SchemaTest extends junit.framework.TestCase {
  
     public static void main(String[] args) {
 
