@@ -1,4 +1,4 @@
-package com.xmlunit.tutorial.comparison;
+//package com.xmlunit.tutorial.comparison;
 
 import java.io.File;
 import java.io.FileInputStream;
