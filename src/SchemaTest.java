@@ -9,10 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
  
-import org.custommonkey.xmlunit.Validator;
-import org.custommonkey.xmlunit.DetailedDiff;
-import org.custommonkey.xmlunit.Diff;
-import org.custommonkey.xmlunit.Difference;
+import org.custommonkey.xmlunit.*;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
  
