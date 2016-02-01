@@ -15,7 +15,12 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-    public void testNothing() {
+    string myXmlSchemaFile = "oata/myXML.xsd";
+
+    public void testXMLSchemaDefinition() {
+        Validator v = new Validator();
+        v.addSchemaSource(new StreamSource(new File(myXmlSchemaFile)));
+        assertTrue(v.toString(), v.isSchemaValid());
     }
     
     public void testWillAlwaysFail() {
@@ -23,15 +28,12 @@ public class SchemaTest extends junit.framework.TestCase {
     }
 
     public void testXMLagainstSchema() {
-          //assertTrue("This will pass pass", true);
-          //assertTrue("This will fail", false);
-
  
         try {
           InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
           Validator v = new Validator(is);
           v.useXMLSchema(true);
-          v.setJAXP12SchemaSource(new File("oata/myXML.xsds"));
+          v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
           assertTrue(v.toString(), v.isValid());
           //assertTrue("This will pass pass", true);
           //assertTrue("This will fail", false);
