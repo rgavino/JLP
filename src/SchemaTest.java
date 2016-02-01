@@ -15,8 +15,8 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-    String myXmlSchemaFile = "oata/myXML.xsd";
-    String myXmlDocument = "oata/myXML.xml";
+    String myXmlSchemaFile = "/var/lib/jenkins/workspace/test/oata/myXML.xsd";
+    String myXmlDocument = "/var/lib/jenkins/workspace/test/oata/myXML.xml";
 
     public void testXMLSchemaDefinition() {
     }
@@ -28,10 +28,10 @@ public class SchemaTest extends junit.framework.TestCase {
     public void testXMLagainstSchema() {
  
         try {
-          InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+          InputSource is = new InputSource(new FileInputStream(myXmlDocument));
           Validator v = new Validator(is);
           v.useXMLSchema(true);
-          v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
+          v.setJAXP12SchemaSource(new File(myXmlSchemaFile));
           assertTrue(v.toString(), v.isValid());
           //assertTrue("This will pass pass", true);
           //assertTrue("This will fail", false);
