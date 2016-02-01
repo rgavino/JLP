@@ -24,10 +24,12 @@ public class SchemaTest {
 
 	  //assertTrue(v.toString(), v.isValid());
  
- System.out.println("Working Directory = " +
-              System.getProperty("user.dir"));
+        try {
+			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
-//InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
 
 //Validator v = new Validator(is);
 //v.useXMLSchema(true);
