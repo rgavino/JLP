@@ -27,7 +27,6 @@ public class SchemaTest extends junit.framework.TestCase {
 
     public void testXMLagainstSchema() {
  
-          InputSource is2 = new InputSource(new FileInputStream("myXML.xml"));
         try {
           InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
           Validator v = new Validator(is);
@@ -38,6 +37,7 @@ public class SchemaTest extends junit.framework.TestCase {
           //assertTrue("This will fail", false);
             //boolean isValid = v.isValid();
         } catch (Exception e) {
+            System.out.println("Errored");
             e.printStackTrace();
         }
                 //fail("An error message - forcing a fail"); 
