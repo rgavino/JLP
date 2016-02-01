@@ -23,8 +23,8 @@ public class SchemaTest extends junit.framework.TestCase {
     }
 
     public void testXMLagainstSchema() {
-          assertTrue("should pass", true);
-         // assertTrue("should fail", false);
+//          assertTrue("should pass", true);
+          assertTrue("should fail", false);
 
  
         try {
