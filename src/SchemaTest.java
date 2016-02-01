@@ -23,12 +23,12 @@ public class SchemaTest {
  
         try {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+   			Validator v = new Validator(is);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
 
-		Validator v = new Validator(is);
 //v.useXMLSchema(true);
 //v.setJAXP12SchemaSource(new File(myXML3.xsd));
 //boolean isValid = v.isValid();
