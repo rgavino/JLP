@@ -23,7 +23,7 @@ public class SchemaTest {
 	  //Validator v = new Validator(new File("oata/myXML.xml").toString(), new File("oata/myXML3.xsd").toString());
 
 	  //assertTrue(v.toString(), v.isValid());
-
+ 
 InputSource is = new InputSource(new FileInputStream(oata/myXML.xml));
 //Validator v = new Validator(is);
 //v.useXMLSchema(true);
