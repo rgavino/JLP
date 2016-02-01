@@ -20,18 +20,18 @@ public void validateXMLagainstSchema() {
 
 	  //assertTrue(v.toString(), v.isValid());
  
-        try {
-			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
-   			Validator v = new Validator(is);
-			v.useXMLSchema(true);
-			v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
+//        try {
+//			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
+  // 			Validator v = new Validator(is);
+	//		v.useXMLSchema(true);
+	//		v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
 //			assertTrue(v.toString(), v.isValid());
 //			assertTrue("should pass", true);
 //			assertTrue("should fail", false);
 			//boolean isValid = v.isValid();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+      //  } catch (Exception e) {
+        //    e.printStackTrace();
+        //}
                 //fail("An error message - forcing a fail"); 
     }
 
