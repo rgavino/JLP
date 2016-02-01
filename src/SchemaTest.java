@@ -24,7 +24,7 @@ public class SchemaTest {
         try {
 			InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
    			Validator v = new Validator(is);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
