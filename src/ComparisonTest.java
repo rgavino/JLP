@@ -14,8 +14,8 @@ import org.xml.sax.SAXException;
 public class ComparisonTest {
  
     public static void main(String[] args) {
-        URL url1 = ComparisonTest.class.getResource("reference.xml");
-        URL url2 = ComparisonTest.class.getResource("comparison.xml");
+        URL url1 = ComparisonTest.class.getResource("oata/reference.xml");
+        URL url2 = ComparisonTest.class.getResource("oata/comparison.xml");
         FileReader fr1 = null;
         FileReader fr2 = null;
         try {
