@@ -14,36 +14,11 @@ import org.xml.sax.SAXException;
 public class SchemaTest {
  
     public static void main(String[] args) {
-        URL url1 = SchemaTest.class.getResource("myXML.xml");
-        URL url2 = SchemaTest.class.getResource("myXML-3.xsd");
-        FileReader fr1 = null;
-        FileReader fr2 = null;
-        try {
-            fr1 = new FileReader(url1.getPath());
-            fr2 = new FileReader(url2.getPath());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
- 
-        try {
-            Diff diff = new Diff(fr1, fr2);
-            System.out.println("Similar? " + diff.similar());
-            System.out.println("Identical? " + diff.identical());
- 
-            DetailedDiff detDiff = new DetailedDiff(diff);
-            List differences = detDiff.getAllDifferences();
-            for (Object object : differences) {
-                Difference difference = (Difference)object;
-                System.out.println("***********************");
-                System.out.println(difference);
-                System.out.println("***********************");
-            }
- 
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+	  Validator v = new Validator(new File("myXML.xml").toURI().toURL().toString(), 
+	  							  new File("myXML-3.xsd").toURI().toURL().toString());
+
+	  assertTrue(v.toString(), v.isValid());
+
     }
  
 }
