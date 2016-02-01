@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-    string myXmlSchemaFile = "oata/myXML.xsd";
+    String myXmlSchemaFile = "oata/myXML.xsd";
 
     public void testXMLSchemaDefinition() {
         Validator v = new Validator();
