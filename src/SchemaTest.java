@@ -31,7 +31,7 @@ public class SchemaTest extends junit.framework.TestCase {
           InputSource is = new InputSource(new FileInputStream("oata/myXML.xml"));
           Validator v = new Validator(is);
           v.useXMLSchema(true);
-          v.setJAXP12SchemaSource(new File("oata/myXML.xsd"));
+          v.setJAXP12SchemaSource(new File("oata/myXML.xsds"));
           assertTrue(v.toString(), v.isValid());
           //assertTrue("This will pass pass", true);
           //assertTrue("This will fail", false);
